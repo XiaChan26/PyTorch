@@ -5,7 +5,7 @@ import numpy as np
 
 
 # 2、定义获取数据集的类
-# 该类继承基类Dataset，自定义一个数据集及对应标签
+# 该类继承基类Dataset，自定义一个数据集及对应标签，自定义Dataset需要重写__getitem__和__len__
 class TestDataset(data.Dataset):
     def __init__(self):
         self.Data = np.asarray([[1, 2], [3, 4], [2, 1], [4, 2], [4, 5]])
